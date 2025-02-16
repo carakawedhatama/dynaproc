@@ -1,0 +1,20 @@
+appName: "dynaproc"
+appVersion: "1.0.0"
+environment: "development" # development, staging, production
+
+database:
+  host: ${DB_HOST:127.0.0.1}
+  port: ${DB_PORT:5432}
+  user: ${DB_USER:postgres}
+  password: ${DB_PASSWORD:postgres}
+  name: ${DB_NAME:dynaproc}
+  sslmode: ${DB_SSLMODE:disable}
+
+rabbitmq:
+  url: ${RABBITMQ_URL}
+
+dynamics365:
+  api_url: ${DYNAMICS_API_URL}
+
+glitchtip:
+  api_url: ${GLITCHTIP_API}
